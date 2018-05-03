@@ -4472,3 +4472,13 @@ video::-webkit-media-controls-enclosure {
 .case .section--slideshow-photos .not-found .content-wrapper .p {
     margin-top: 5px
 }
+
+@font-face {
+    font-family: "GT America";
+    src: url(GT-America-Regular.otf);
+}
+
+@font-face {
+    font-family: "GTAmerica-ExpandedMedium";
+    src: url(GT-America-Expanded-Medium.otf);
+}
