@@ -83,7 +83,16 @@ table {
     width: 86px;
     height: 23px;
 }
-
+@font-face {
+    font-family: 'Graphik-bold', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik-bold', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
 .smoothing {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -124,7 +133,7 @@ table {
 }html {
     font-size: 62.5%}
 body {
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik', sans-serif;
     color: #000;
     font-size: 1.4rem;
     -moz-osx-font-smoothing: grayscale;
@@ -273,7 +282,7 @@ a:active, a:visited:active, .a:active {
     color: #fff;
     font-weight: bold;
     text-align: center;
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik-bold', sans-serif;
     font-size: 180px;
     font-size: 14.0625vw;
     letter-spacing: -0.02em;
@@ -961,7 +970,6 @@ video::-webkit-media-controls-enclosure {
     transition: fill 0.3s cubic-bezier(0.26,  1.04,  0.54,  1);
 }
 .nav__list {
-    font-family: "GTAmerica-ExpandedRegular";
     position: fixed;
     z-index: 100;
     top: 35px;
@@ -1080,11 +1088,10 @@ video::-webkit-media-controls-enclosure {
     transform: none !important;
 }
 .nav__item a {
-    font-family: "GTAmerica-ExpandedMedium" !important;
     display: block;
     color: #000 !important;
     font-size: 33px;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 0;
     line-height: 1.4;
 }
@@ -2237,7 +2244,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 3.125vw;
     line-height: 50px;
     line-height: 3.90625vw;
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik-bold', sans-serif;
     letter-spacing: -0.02em;
     width: 64.97408%;
     margin-left: 12.69031%;
@@ -2300,7 +2307,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 1.09375vw;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik-bold', sans-serif;
     color: rgba(74, 74, 74, 0.55);
     position: relative;
 }
@@ -2384,7 +2391,7 @@ video::-webkit-media-controls-enclosure {
     text-align: center;
     font-size: 180px;
     font-size: 14.0625vw;
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik', sans-serif;
     line-height: 180px;
     line-height: 14.0625vw;
     letter-spacing: -2.5px;
@@ -2427,7 +2434,7 @@ video::-webkit-media-controls-enclosure {
 }
 .career .apply p {
     color: #7b7b7b;
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik', sans-serif;
     font-size: 14px;
     font-size: 1.09375vw;
     line-height: 28px;
@@ -2745,7 +2752,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 25px;
     font-size: 1.95312vw;
     line-height: 1.4;
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik', sans-serif;
     letter-spacing: -0.02em;
 }
 .contact .location {
@@ -2845,7 +2852,7 @@ video::-webkit-media-controls-enclosure {
     font-weight: bold;
     font-size: 180px;
     font-size: 14.0625vw;
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik', sans-serif;
     line-height: 180px;
     line-height: 14.0625vw;
     letter-spacing: -.25px;
@@ -3413,7 +3420,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 1.95312vw;
     line-height: 35px;
     line-height: 2.73438vw;
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik', sans-serif;
     letter-spacing: -1px;
     letter-spacing: -.07812vw;
     padding-top: 110px;
@@ -3445,7 +3452,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 1.95312vw;
     line-height: 75px;
     line-height: 5.85938vw;
-    font-family: 'GT America', sans-serif;
+    font-family: 'Graphik', sans-serif;
     text-transform: uppercase;
     letter-spacing: -.5px;
     letter-spacing: -.03906vw;

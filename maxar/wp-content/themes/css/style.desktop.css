@@ -2,9 +2,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 65%;
+    font-size: 100%;
     font: inherit;
-    vertical-align: inherit;
+    vertical-align: baseline;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
@@ -83,16 +83,7 @@ table {
     width: 86px;
     height: 23px;
 }
-@font-face {
-    font-family: 'Arial', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-}
+
 .smoothing {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -133,8 +124,7 @@ table {
 }html {
     font-size: 62.5%}
 body {
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
+    font-family: 'GT America', sans-serif;
     color: #000;
     font-size: 1.4rem;
     -moz-osx-font-smoothing: grayscale;
@@ -143,7 +133,6 @@ body {
     -ms-font-smoothing: antialiased;
     font-smoothing: antialiased;
     background: #000;
-    letter-spacing: -1px;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -184,18 +173,7 @@ a:active, a:visited:active, .a:active {
 .p {
     font-size: 15px;
     line-height: 1.1;
-    font-family: "Arial";
-    text-transform: none;
-    letter-spacing: -0.05em;
-    font-weight: lighter;
-}
-
-.p2 {
-    font-size: 15px;
-    line-height: 1.1;
     -webkit-text-stroke: 0.15px;
-    font-family: "Arial";
-    text-transform: uppercase;
 }
 .p a {
     display: inline-block;
@@ -223,7 +201,7 @@ a:active, a:visited:active, .a:active {
     text-rendering: optimizelegibility;
 }
 .h1 {
-    font-size: 9vw;
+    font-size: 13vw;
     margin-left: -0.4vw;
     font-weight: bold;
     line-height: 0;
@@ -231,30 +209,16 @@ a:active, a:visited:active, .a:active {
 .h1 .word {
     display: inline-block;
     overflow: hidden;
-    padding-right: 0em;
-    line-height: 1;
-    margin-top: 19.4375vw;
+    padding-right: 0.05em;
+    line-height: 1.08;
+    margin-top: -1.5625vw;
 }
 .h1 .word:after {
     content: "";
     display: block;
 }
 .h1 .tx {
-  display: block;
-  font-family: "Arial";
-  text-transform: uppercase;
-  letter-spacing: -0.08em;
-  font-weight: lighter;
-  text-align: center;
-}
-.h1 .tx2 {
-  display: block;
-  font-family: "Gascogne-XLight";
-  font-size: 5vw;
-  text-transform: none;
-  letter-spacing: -0.02em;
-  font-weight: lighter;
-  text-align: center;
+    display: block;
 }
 .scrollable {
     top: 0;
@@ -309,7 +273,7 @@ a:active, a:visited:active, .a:active {
     color: #fff;
     font-weight: bold;
     text-align: center;
-    font-family: 'Arial', sans-serif;
+    font-family: 'GT America', sans-serif;
     font-size: 180px;
     font-size: 14.0625vw;
     letter-spacing: -0.02em;
@@ -997,6 +961,7 @@ video::-webkit-media-controls-enclosure {
     transition: fill 0.3s cubic-bezier(0.26,  1.04,  0.54,  1);
 }
 .nav__list {
+    font-family: "GTAmerica-ExpandedRegular";
     position: fixed;
     z-index: 100;
     top: 35px;
@@ -1020,8 +985,6 @@ video::-webkit-media-controls-enclosure {
 }
 .nav--white .nav__item .link {
     color: #fff;
-    text-transform: uppercase;
-    letter-spacing: -.04em;
 }
 .nav--white .nav__item .link::after {
     background: #fff;
@@ -1034,8 +997,6 @@ video::-webkit-media-controls-enclosure {
 }
 .nav--black .nav__item .link {
     color: #000;
-    text-transform: uppercase;
-    letter-spacing: -.04em;
 }
 .nav--black .nav__item .link::after {
     background: #000;
@@ -1119,10 +1080,11 @@ video::-webkit-media-controls-enclosure {
     transform: none !important;
 }
 .nav__item a {
+    font-family: "GTAmerica-ExpandedMedium" !important;
     display: block;
     color: #000 !important;
     font-size: 33px;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: 0;
     line-height: 1.4;
 }
@@ -1681,10 +1643,10 @@ video::-webkit-media-controls-enclosure {
 }
 .case__header .h1-wrapper {
     position: absolute;
-    bottom: calc(50% - 140px);
+    bottom: calc(50% - 75px);
 }
 .case__header .h1 {
-    font-size: 10vw;
+    font-size: 11vw;
     left: -0.4vw;
     letter-spacing: -0.04em;
     display: inline;
@@ -1712,10 +1674,8 @@ video::-webkit-media-controls-enclosure {
     box-sizing: border-box;
 }
 .case__header .container>div, .case__header .case .section--video .content-wrapper>div, .case .section--video .case__header .content-wrapper>div, .case__header .case .section--slideshow-videos .content-wrapper>div, .case .section--slideshow-videos .case__header .content-wrapper>div, .case__header .case .section--slideshow-photos .content-wrapper>div, .case .section--slideshow-photos .case__header .content-wrapper>div {
-    margin-left: 0%;
-    width: 100%;
-    text-align: center;
-    }
+    margin-left: 12.69031%;
+    width: 74.61937%}
 .case__header .video-wrapper {
     position: absolute;
     z-index: 0;
@@ -1743,7 +1703,7 @@ video::-webkit-media-controls-enclosure {
 }
 .case__footer {
     background: #fff;
-    padding: 12% 0;
+    padding: 17.51296% 0;
     text-align: center;
     position: relative;
     margin-top: -1px;
@@ -1762,9 +1722,6 @@ video::-webkit-media-controls-enclosure {
     display: inline-block;
     overflow: hidden;
     letter-spacing: -0.025em;
-    font-family: "Arial";
-    text-transform: uppercase;
-    font-weight: lighter;
 }
 .case__footer .h1 a::after {
     content: "";
@@ -1803,9 +1760,6 @@ video::-webkit-media-controls-enclosure {
     display: inline-block;
     color: #000;
     letter-spacing: -0.025em;
-    font-family: "Arial";
-    text-transform: uppercase;
-    font-weight: lighter;
 }
 .case__footer .link:hover, .case__footer .link:active {
     color: #000;
@@ -1838,22 +1792,19 @@ video::-webkit-media-controls-enclosure {
     vertical-align: middle;
 }
 .case .section--text-image .title, .case .section--image-text .title {
-    font-family: "-WEBKIT-PICTOGRAPH;;
     width: 82.63904%;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 1.2;
-    letter-spacing: -0.04em;
-    font-weight: regular;
+    letter-spacing: -0.02em;
+    font-weight: bold;
     margin-bottom: 50px;
-    text-transform: uppercase;
 }
 .case .section--text-image .p, .case .section--image-text .p {
     color: #333333;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.67;
-    letter-spacing: 0.03em;
-    font-weight: 400;
-    font-family: "gascogne-serial-extralight-regular";
+    letter-spacing: 0.01em;
+    font-weight: normal;
 }
 .case .section--text-image {
     text-align: right;
@@ -1863,8 +1814,8 @@ video::-webkit-media-controls-enclosure {
     width: 42.89359%;
     margin-right: 20.55798%}
 .case .section--text-image .right {
-    width: calc(15% + 133px);
-    margin-right: 0px;
+    width: calc(23.85812% + 44px);
+    margin-right: -44px;
 }
 .case .section--image-text .left {
     width: 42.89359%;
@@ -1917,18 +1868,13 @@ video::-webkit-media-controls-enclosure {
     z-index: 1;
 }
 .case .section .videoplayer-overlay .content-wrapper .content {
-    margin-left: 0%;
-    width: 100%}
+    margin-left: 12.69031%;
+    width: 61.92906%}
 .case .section .videoplayer-overlay .h1 {
-    font-size: 45px;
+    font-size: 55px;
     font-size: 4.29688vw;
     margin-bottom: 20px;
     margin-left: 0;
-    font-family: "Arial";
-    text-transform: uppercase;
-    font-weight: lighter;
-    letter-spacing: -0.04em;
-    text-align: center
 }
 .case .section--slideshow-photos {
     background: #fff;
@@ -2149,10 +2095,7 @@ video::-webkit-media-controls-enclosure {
     max-width: none;
     width: 87.30969%}
 .case__header .h1 {
-  font-size: 10vw;
-  left: -0.4vw;
-  letter-spacing: -0.04em;
-  display: inline
+    font-size: 11.5vw;
 }
 .case__header .h1 br {
     display: none;
@@ -2161,7 +2104,7 @@ video::-webkit-media-controls-enclosure {
     padding: 0;
 }
 .case .section--text-image .container, .case .section--text-image .section--video .content-wrapper, .case .section--video .section--text-image .content-wrapper, .case .section--text-image .section--slideshow-videos .content-wrapper, .case .section--slideshow-videos .section--text-image .content-wrapper, .case .section--text-image .section--slideshow-photos .content-wrapper, .case .section--slideshow-photos .section--text-image .content-wrapper {
-    text-align: center;
+    text-align: left;
 }
 .case .section--text-image .left {
     padding: 120px 0;
@@ -2184,13 +2127,8 @@ video::-webkit-media-controls-enclosure {
     width: 74.61937%;
     margin-left: 0;
 }
-.case .section--text-image .p, .case .section--image-text .p {
-    font-size: 14px;
-    line-height: 1.67;
-    letter-spacing: 0.03em;
-}
 .case .section--image-text .right .p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.7;
     margin: 50px 0;
 }
@@ -2223,9 +2161,8 @@ video::-webkit-media-controls-enclosure {
     font-size: 20px;
 }
 .case .section .videoplayer-overlay .content-wrapper .content {
-    margin-lefrgin-left: 0;
-    width: 100%;
-    margin-top:25%;}
+    margin-left: 0;
+    width: 74.61937%}
 .case .section:last-of-type {
     border-bottom: 22px solid white;
 }
@@ -2300,10 +2237,8 @@ video::-webkit-media-controls-enclosure {
     font-size: 3.125vw;
     line-height: 50px;
     line-height: 3.90625vw;
-    font-family: "Arial";
-    text-transform: uppercase;
-    font-weight: lighter;
-    letter-spacing: -0.04em;
+    font-family: 'GT America', sans-serif;
+    letter-spacing: -0.02em;
     width: 64.97408%;
     margin-left: 12.69031%;
     margin-bottom: 155px;
@@ -2365,10 +2300,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 1.09375vw;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    font-family: "Arial";
-    text-transform: uppercase;
-    letter-spacing: -15px;
-    font-weight: lighter;
+    font-family: 'GT America', sans-serif;
     color: rgba(74, 74, 74, 0.55);
     position: relative;
 }
@@ -2452,10 +2384,8 @@ video::-webkit-media-controls-enclosure {
     text-align: center;
     font-size: 180px;
     font-size: 14.0625vw;
-    font-family: "Arial";
-    text-transform: uppercase;
-    letter-spacing: -15px;
-    font-weight: lighter;
+    font-family: 'GT America', sans-serif;
+    line-height: 180px;
     line-height: 14.0625vw;
     letter-spacing: -2.5px;
     letter-spacing: -.19531vw;
@@ -2497,9 +2427,7 @@ video::-webkit-media-controls-enclosure {
 }
 .career .apply p {
     color: #7b7b7b;
-    font-family: "Arial";
-    text-transform: uppercase;
-    font-weight: lighter;
+    font-family: 'GT America', sans-serif;
     font-size: 14px;
     font-size: 1.09375vw;
     line-height: 28px;
@@ -2817,10 +2745,8 @@ video::-webkit-media-controls-enclosure {
     font-size: 25px;
     font-size: 1.95312vw;
     line-height: 1.4;
-    font-family: "Arial";
-    text-transform: uppercase;
-    font-weight: lighter;
-    letter-spacing: -0.04em;
+    font-family: 'GT America', sans-serif;
+    letter-spacing: -0.02em;
 }
 .contact .location {
     position: relative;
@@ -2919,7 +2845,7 @@ video::-webkit-media-controls-enclosure {
     font-weight: bold;
     font-size: 180px;
     font-size: 14.0625vw;
-    font-family: 'Graphik', sans-serif;
+    font-family: 'GT America', sans-serif;
     line-height: 180px;
     line-height: 14.0625vw;
     letter-spacing: -.25px;
@@ -3487,7 +3413,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 1.95312vw;
     line-height: 35px;
     line-height: 2.73438vw;
-    font-family: 'Graphik', sans-serif;
+    font-family: 'GT America', sans-serif;
     letter-spacing: -1px;
     letter-spacing: -.07812vw;
     padding-top: 110px;
@@ -3519,7 +3445,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 1.95312vw;
     line-height: 75px;
     line-height: 5.85938vw;
-    font-family: 'Graphik', sans-serif;
+    font-family: 'GT America', sans-serif;
     text-transform: uppercase;
     letter-spacing: -.5px;
     letter-spacing: -.03906vw;
@@ -3633,5 +3559,3 @@ video::-webkit-media-controls-enclosure {
 .not-found .container .p, .not-found .case .section--video .content-wrapper .p, .case .section--video .not-found .content-wrapper .p, .not-found .case .section--slideshow-videos .content-wrapper .p, .case .section--slideshow-videos .not-found .content-wrapper .p, .not-found .case .section--slideshow-photos .content-wrapper .p, .case .section--slideshow-photos .not-found .content-wrapper .p {
     margin-top: 5px;
 }
-nt-wrapper .p {
-    margin-top:

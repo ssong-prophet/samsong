@@ -84,8 +84,7 @@ video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
-    font-family: "GT America";
+    vertical-align: baseline
 }
 
 article,
@@ -103,8 +102,7 @@ section {
 }
 
 body {
-    line-height: 1;
-
+    line-height: 1
 }
 
 ol,
@@ -195,7 +193,21 @@ table {
 
 .logo-small-dims {
     width: 86px;
-    height: 23px;
+    height: 23px
+}
+
+@font-face {
+    font-family: 'antoni-web';
+    src: url("../fonts/antoni-roman-web.woff2") format("woff2"), url("../fonts/antoni-roman-web.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'antoni-web';
+    src: url("../fonts/antoni-bold-web.woff2") format("woff2"), url("../fonts/antoni-bold-web.woff") format("woff");
+    font-weight: bold;
+    font-style: normal
 }
 
 .smoothing {
@@ -261,8 +273,8 @@ html {
 }
 
 body {
-    font-family: "GT-America-Regular", Helvetica, Arial, sans-serif;
-    color: #fff;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
     font-size: 1.4rem;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -272,7 +284,7 @@ body {
     background: #000;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .loading * {
@@ -285,8 +297,8 @@ body {
 }
 
 ::selection {
-    background: #fff;
-    color: #fff;
+    background: #222;
+    color: #fff
 }
 
 ::-moz-selection {
@@ -448,7 +460,7 @@ a:visited:active,
     color: #fff;
     font-weight: bold;
     text-align: center;
-    font-family: "GT America Expanded Regular", Helvetica, Arial, sans-serif;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 180px;
     font-size: 14.0625vw;
     letter-spacing: -0.02em;
@@ -535,8 +547,7 @@ a:visited:active,
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    cursor: pointer;
-    font-family: "GTAmerica-ExpandedRegular";
+    cursor: pointer
 }
 
 .link::after {
@@ -1323,10 +1334,10 @@ video::-webkit-media-controls-enclosure {
     z-index: 100;
     top: 40px;
     left: 0;
-    margin: 0px 0 0 44px;
+    margin: -3px 0 0 44px;
     font-size: 0;
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden
 }
 
 .nav__logo>.logo-small {
@@ -1336,7 +1347,6 @@ video::-webkit-media-controls-enclosure {
 }
 
 .nav__list {
-    font-family: "GTAmerica-ExpandedRegular";
     position: fixed;
     z-index: 100;
     top: 35px;
@@ -1346,17 +1356,16 @@ video::-webkit-media-controls-enclosure {
 }
 
 .nav__item {
-    font-family: "GTAmerica-ExpandedRegular" !important;
     float: left;
     margin-left: 20px;
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden
 }
 
 .nav__item .link {
-    font-family: "GTAmerica-ExpandedMedium" !important;
+    -webkit-transition: color 0.3s cubic-bezier(0.26, 1.04, 0.54, 1);
     -o-transition: color 0.3s cubic-bezier(0.26, 1.04, 0.54, 1);
-    transition: color 0.3s cubic-bezier(0.26, 1.04, 0.54, 1);
+    transition: color 0.3s cubic-bezier(0.26, 1.04, 0.54, 1)
 }
 
 .nav--white>.nav__logo>.logo-small {
@@ -1364,37 +1373,34 @@ video::-webkit-media-controls-enclosure {
 }
 
 .nav--white .nav__item .link {
-    color: #fff;
-    font-family: "GTAmerica-ExpandedMedium" !important;
+    color: #fff
 }
 
 .nav--white .nav__item .link::after {
-    background: #fff;
+    background: #fff
 }
 
 .nav--white .burger {
-    fill: #fff;
+    fill: #fff
 }
 
 .nav--black>.nav__logo>.logo-small {
-    fill: #000;
-
+    fill: #000
 }
 
 .nav--black .nav__item .link {
-    color: #000;
+    color: #000
 }
 
 .nav--black .nav__item .link::after {
-    background: #000;
+    background: #000
 }
 
 .nav--black .burger {
-    fill: #000;
+    fill: #000
 }
 
 @media screen and (max-width: 1024px) {
-
     .nav__logo {
         top: 44px;
         margin-left: 44px;
@@ -1440,7 +1446,6 @@ video::-webkit-media-controls-enclosure {
         -ms-flex-align: left;
         align-items: left
     }
-
     .nav__list .footer {
         position: absolute;
         bottom: 44px;
@@ -1459,7 +1464,6 @@ video::-webkit-media-controls-enclosure {
         transition: transform 1.2s cubic-bezier(0.16, 1.08, 0.38, 0.98);
         transition: transform 1.2s cubic-bezier(0.16, 1.08, 0.38, 0.98), -webkit-transform 1.2s cubic-bezier(0.16, 1.08, 0.38, 0.98)
     }
-
     .nav__item {
         margin-top: 5px;
         margin-bottom: 5px;
@@ -1469,18 +1473,16 @@ video::-webkit-media-controls-enclosure {
         visibility: inherit !important;
         -webkit-transform: none !important;
         -ms-transform: none !important;
-        transform: none !important;
+        transform: none !important
     }
     .nav__item a {
-        font-family: "GTAmerica-ExpandedMedium" !important;
         display: block;
         color: #000 !important;
         font-size: 33px;
-        font-weight: 500;
+        font-weight: bold;
         letter-spacing: 0;
-        line-height: 1.4;
+        line-height: 1.4
     }
-
     .burger,
     .close {
         z-index: 100;
@@ -1516,7 +1518,6 @@ video::-webkit-media-controls-enclosure {
         height: 20px
     }
     .nav__list.active {
-        font-family: "GTAmerica-ExpandedRegular" !important;
         -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
         -webkit-transition: -webkit-transform 1s cubic-bezier(0.16, 1.08, 0.38, 0.98);
@@ -1526,11 +1527,9 @@ video::-webkit-media-controls-enclosure {
         transition: transform 1s cubic-bezier(0.16, 1.08, 0.38, 0.98), -webkit-transform 1s cubic-bezier(0.16, 1.08, 0.38, 0.98)
     }
     .nav__item {
-        margin-left: 22px;
-        font-family: "GTAmerica-ExpandedRegular" !important;
+        margin-left: 22px
     }
     .nav__item.desktop {
-        font-family: "GTAmerica-ExpandedRegular" !important;
         opacity: 0 !important;
         visibility: hidden !important
     }
@@ -1547,9 +1546,8 @@ video::-webkit-media-controls-enclosure {
 
 @media screen and (max-height: 415px) {
     .nav__item {
-        font-family: "GTAmerica-ExpandedRegular" !important;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 0
     }
     .nav .container,
     .nav .case .section--video .content-wrapper,
@@ -1934,12 +1932,9 @@ video::-webkit-media-controls-enclosure {
 }
 
 .cases .slideshow__item .h2 {
-    font-family: "GT America";
     font-size: 1.5vw;
-    font-weight: 500;
-    display: inline-block;
-    letter-spacing: -.01em;
-    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block
 }
 
 .cases .slideshow__item .h2 br {
@@ -1947,12 +1942,9 @@ video::-webkit-media-controls-enclosure {
 }
 
 .cases .slideshow__item .p {
-    color: #fff;
-    font-family: "GT America";
+    color: #4a4a4a;
     font-size: 1.12vw;
-    margin-top: 0.5vw;
-    font-weight: lighter;
-    letter-spacing: -.01em;
+    margin-top: 0.5vw
 }
 
 .cases .slideshow__item .media {
@@ -2905,7 +2897,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 3.125vw;
     line-height: 50px;
     line-height: 3.90625vw;
-    font-family: "GT-America-Regular", Helvetica, Arial, sans-serif;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: -0.02em;
     width: 64.97408%;
     margin-left: 12.69031%;
@@ -2982,7 +2974,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 1.09375vw;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    font-family: "GT-America-Regular", Helvetica, Arial, sans-serif;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgba(74, 74, 74, 0.55);
     position: relative
 }
@@ -3081,7 +3073,7 @@ video::-webkit-media-controls-enclosure {
     text-align: center;
     font-size: 180px;
     font-size: 14.0625vw;
-    font-family: "GT-America-Regular", Helvetica, Arial, sans-serif;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 180px;
     line-height: 14.0625vw;
     letter-spacing: -2.5px;
@@ -3127,7 +3119,7 @@ video::-webkit-media-controls-enclosure {
 
 .career .apply p {
     color: #7b7b7b;
-    font-family: "GT-America-Regular", Helvetica, Arial, sans-serif;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-size: 1.09375vw;
     line-height: 28px;
@@ -3485,7 +3477,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 25px;
     font-size: 1.95312vw;
     line-height: 1.4;
-    font-family: "GT-America-Regular", Helvetica, Arial, sans-serif;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: -0.02em
 }
 
@@ -3601,10 +3593,10 @@ video::-webkit-media-controls-enclosure {
 .contact .location .city {
     color: #c5c5c5;
     cursor: pointer;
-    font-weight: none;
+    font-weight: bold;
     font-size: 180px;
     font-size: 14.0625vw;
-    font-family: "GT-America-Regular", Helvetica, Arial, sans-serif;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 180px;
     line-height: 14.0625vw;
     letter-spacing: -.25px;
@@ -4280,7 +4272,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 1.95312vw;
     line-height: 35px;
     line-height: 2.73438vw;
-    font-family: "GT-America-Regular", Helvetica, Arial, sans-serif;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
     letter-spacing: -.07812vw;
     padding-top: 110px;
@@ -4319,7 +4311,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 1.95312vw;
     line-height: 75px;
     line-height: 5.85938vw;
-    font-family: "GT-America-Regular", Helvetica, Arial, sans-serif;
+    font-family: "antoni-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: -.5px;
     letter-spacing: -.03906vw;

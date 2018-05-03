@@ -3302,7 +3302,7 @@ video::-webkit-media-controls-enclosure {
         width: 100%
     }
     .career .job .col-3::before {
-        content: '— ';
+        content: 'â€” ';
         display: inline;
         margin-left: 8px;
         margin-left: 1.08108vw
